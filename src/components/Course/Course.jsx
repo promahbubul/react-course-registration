@@ -7,7 +7,7 @@ const Course = ({ courses, handleCourseSelect }) => {
     <>
       {courses.map((course) => (
         <div key={course.id} className="p-4 bg-white	rounded-xl">
-          <img src={course.cover_img} alt="" />
+          <img src={course.cover_img} className="w-full" alt="" />
           <h3 className="text-black text-base font-semibold font-semibold my-4">
             {course.title}
           </h3>

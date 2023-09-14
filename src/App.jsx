@@ -53,7 +53,7 @@ function App() {
     <>
       <div className="w-11/12 m-auto  mb-20">
         <Header />
-        <div className="main flex gap-4">
+        <div className="main  flex lg:flex-row flex-col gap-4  ">
           <Courses handleCourseSelect={handleCourseSelect} courses={courses} />
           <ToastContainer />
           <Cart

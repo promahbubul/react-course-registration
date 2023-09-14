@@ -2,7 +2,7 @@ import React from "react";
 
 const Cart = ({ selectCourse, totalCredit, totalPrice, remainingCredit }) => {
   return (
-    <div className="w-3/12 bg-white p-6 rounded-xl h-min  	">
+    <div className="lg:w-3/12 bg-white p-6 rounded-xl h-min  	">
       <h3 className="text-blue text-base pb-4 font-bold border-b-2 border-silver">
         Credit Hour Remaining {remainingCredit} hr
       </h3>
