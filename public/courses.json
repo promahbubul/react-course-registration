@@ -1,1 +1,74 @@
-[{}, {}, {}, {}, {}, {}, {}, {}, {}]
+[
+  {
+    "id": 1,
+    "cover_img": "./img/c-programming.png",
+    "title": "Introduction to C Programming",
+    "desc": "Learn the fundamentals of C programming language.",
+    "price": 29.99,
+    "credit": 7
+  },
+  {
+    "id": 2,
+    "cover_img": "./img/algorithom.png",
+    "title": "Introduction to Algorithms",
+    "desc": "Explore the world of algorithms and problem-solving.",
+    "price": 39.99,
+    "credit": 4
+  },
+  {
+    "id": 3,
+    "cover_img": "./img/c-programming.png",
+    "title": "Introduction to C++ for DSA",
+    "desc": "Learn C++ programming for data structures and algorithms.",
+    "price": 49.99,
+    "credit": 9
+  },
+  {
+    "id": 4,
+    "cover_img": "./img/data-structure.jpg",
+    "title": "Basic Data Structures",
+    "desc": "Master the essential data structures in computer science.",
+    "price": 34.99,
+    "credit": 6
+  },
+  {
+    "id": 5,
+    "cover_img": "./img/python-opp.jpg",
+    "title": "Introduction to OOP Python",
+    "desc": "Dive into object-oriented programming with Python.",
+    "price": 29.99,
+    "credit": 2
+  },
+  {
+    "id": 6,
+    "cover_img": "./img/software-enginnering.jpg",
+    "title": "Software Engineering",
+    "desc": "Learn the principles and practices of software engineering.",
+    "price": 44.99,
+    "credit": 8
+  },
+  {
+    "id": 7,
+    "cover_img": "./img/aws.jpg",
+    "title": "AWS, Cloud Computing",
+    "desc": "Discover cloud computing and Amazon Web Services (AWS).",
+    "price": 59.99,
+    "credit": 3
+  },
+  {
+    "id": 8,
+    "cover_img": "./img/mySql2.jpg",
+    "title": "Database (MySQL)",
+    "desc": "Get started with MySQL database management.",
+    "price": 34.99,
+    "credit": 5
+  },
+  {
+    "id": 9,
+    "cover_img": "./img/problem-solving.jpg",
+    "title": "Problem-Solving Part",
+    "desc": "Enhance your problem-solving skills with practical exercises.",
+    "price": 19.99,
+    "credit": 10
+  }
+]

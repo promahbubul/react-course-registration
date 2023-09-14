@@ -6,7 +6,7 @@ import Cart from "./components/Cart/Cart";
 function App() {
   return (
     <>
-      <div className="w-11/12 m-auto ">
+      <div className="w-11/12 m-auto  mb-20">
         <Header />
         <div className="main flex gap-4">
           <Courses />
