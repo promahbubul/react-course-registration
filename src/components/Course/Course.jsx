@@ -1,0 +1,40 @@
+import React from "react";
+import { BiBookOpen } from "react-icons/bi";
+import { FiDollarSign } from "react-icons/fi";
+
+const Course = ({ courses }) => {
+  return (
+    <>
+      {courses.map((course) => (
+        <div className="p-4 bg-white	rounded-xl">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1400/1*oFfl-1UKLtd8XOswpwgriA.png"
+            alt=""
+          />
+          <h3 className="text-black text-lg font-semibold">
+            Introduction to C Programming
+          </h3>
+          <p className="text-gray">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <div className="flex justify-between mb-6">
+            <div className="flex">
+              <FiDollarSign className="text-2xl" />
+              <span className="text-gray">Price: 15000</span>
+            </div>
+            <div className="flex">
+              <BiBookOpen className="text-2xl" />
+              <span className="text-gray">Credit : 1hr</span>
+            </div>
+          </div>
+          <button className="bg-blue text-center py-3 px-5 rounded-md mx-auto block text-white font-semibold text-lg">
+            Select
+          </button>
+        </div>
+      ))}
+    </>
+  );
+};
+
+export default Course;
