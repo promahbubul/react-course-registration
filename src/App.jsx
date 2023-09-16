@@ -1,3 +1,6 @@
+import success from "./assets/sounds/addItem.mp3";
+import noCredit from "./assets/sounds/noCredit.mp3";
+import isExistSound from "./assets/sounds/isExist.mp3";
 import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
 import Courses from "./components/Courses/Courses";
@@ -6,6 +9,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
+  const handleSound = (soundLink) => {
+    new Audio(soundLink).play();
+  };
+
   const [courses, setCourses] = useState([]);
   const [selectCourse, setSelectCourse] = useState([]);
   const [remainingCredit, setRemainingCredit] = useState(20);
@@ -18,7 +25,7 @@ function App() {
       .then((data) => setCourses(data));
   }, []);
 
-  const handleCourseSelect = (course) => {
+  const handleCourseSelect = (course, addAudio) => {
     const newSelectCourse = [...selectCourse, course];
     const newTotalPrice = totalPrice + course.price;
     const newRemainingCredit = remainingCredit - course.credit;
@@ -26,6 +33,7 @@ function App() {
     const isExist = selectCourse.find((item) => item.id == course.id);
     let count = course.credit;
     if (isExist) {
+      handleSound(isExistSound);
       return toast.warn("Already Selected this course", {
         position: toast.POSITION.TOP_LEFT,
       });
@@ -34,10 +42,12 @@ function App() {
         count = count + item.credit;
       });
       if (count > 20) {
+        handleSound(noCredit);
         return toast.error("You have not enouth credit", {
           position: toast.POSITION.TOP_LEFT,
         });
       } else {
+        handleSound(success);
         setRemainingCredit(newRemainingCredit);
         setTotalCredit(count);
         setTotalPrice(newTotalPrice);
